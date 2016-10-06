@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_make_teams"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sebdeveloper6952.teammaker.MakeTeamsActivity">
+
+    <LinearLayout
+        android:id="@+id/ListView_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1" >
+
+        <RelativeLayout
+            android:id="@+id/rl_ListView1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+            <TextView
+                android:id="@+id/tV_Team1"
+                android:text = "Team1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+            </TextView>
+            <ListView
+                android:id="@+id/lV_Team1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tV_Team1">
+            </ListView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ListView2"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:layout_weight="0.5" >
+            <TextView
+                android:id="@+id/tV_Team2"
+                android:text = "@string/makeTeams_tVTeam2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content">
+            </TextView>
+            <ListView
+                android:id="@+id/lV_Team2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tV_Team2">
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:text="@string/mainMenu_btnMakeTeams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/ListView_layout"
+        android:id="@+id/MakeTeamsA_btn_MakeTeams" />
+</RelativeLayout>

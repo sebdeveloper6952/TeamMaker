@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TeamMaker :p</string>
+    <string name="mainMenu_tv1">Name</string>
+    <string name="mainMenu_tv2">Weight</string>
+    <string name="mainMenu_btnAddMember">Add Member</string>
+    <string name="mainMenu_btnMakeTeams">Make Teams</string>
+    <string name="makeTeams_btnSaveList">Save List</string>
+    <string name="makeTeams_tVTeam1">Team1</string>
+    <string name="makeTeams_tVTeam2">Team2</string>
+</resources>
